@@ -1,0 +1,16 @@
+# Rental Deposit Shield — dependencies
+# Install with:  pip install -r requirements.txt
+
+# AWS Strands Agents SDK — the agent framework (tools, hooks, bounded execution)
+strands-agents>=1.0
+
+# Streamlit — interactive web dashboard (streamlit run app.py)
+streamlit>=1.36
+# pandas is pulled in by streamlit and used for the editable deductions table
+pandas>=2.0
+# Pillow — renders evidence placeholders (also pulled in by streamlit)
+pillow>=10.0
+# imageio (+ bundled ffmpeg) — extracts screenshot evidence from the walkthrough video,
+# and renders the sample/demo videos in scripts/
+imageio>=2.30
+imageio-ffmpeg>=0.4
